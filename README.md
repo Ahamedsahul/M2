@@ -118,22 +118,20 @@ int main()
 {
     int a,b,c,d;
     scanf("%d%d",&a,&b);
-    c = add(a,b);
-    d = sub(a,b);
-    printf("Addition: %d\n",c);
-    printf("Subtraction: %d",d);
+    add(a,b);
+    sub(a,b);
 }
 int add(int x,int y)
 {
     int z;
     z = x + y;
-    return z;
+    printf("Addition: %d\n",z);
 }
 int sub(int x,int y)
 {
     int z;
     z = x - y;
-    return z;
+    printf("Subtraction: %d",z);
 }
 ~~~
 
